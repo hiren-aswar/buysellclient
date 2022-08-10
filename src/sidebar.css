@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar{
+      display: flex;
+      flex-direction: column;
+      flex: 0.35;
+     
+   
+      
+  }
+  .sidebarchats{
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.sidebarchats:hover{
+    background-color: gainsboro;
+}
+.sidebar_chatinfo{
+    margin-left: 15px;
+   
+}

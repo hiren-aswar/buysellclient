@@ -1,0 +1,72 @@
+.chatbody{
+    flex: 1;
+    background-image: url("https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+   
+    
+    
+    
+}
+.user{
+    display: flex;
+    margin: 20px;
+}
+.chats{
+    
+    height: 500px;
+    overflow: scroll;
+    background-image: url("https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg");
+   
+}
+.chat_send{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+
+}
+.chat_recive{
+    margin-left: auto;
+    background-color: #dcf8c6;
+
+}
+.chat_timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.chat_name{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+.send{
+    background-color: green;
+    color: white;
+    
+    text-align: center;
+  
+}
+.recive{
+    background-color: blue;
+    color: white;
+    
+    text-align: center;
+
+}
+.chat_foo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 62px;
+border-top: solid 3px lightgrey;
+ 
+}

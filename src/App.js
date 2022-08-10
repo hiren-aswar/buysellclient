@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Admin from "./Admin";
+import Home from "./Home";
+import Login from "./Login";
+import Register from "./Register";
+import User from "./User";
+import io from "socket.io-client";
+const socket = io.connect("https://productintern.herokuapp.com/");
 
 function App() {
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+                
+      <Route path="/" element={<Home socket={socket} />} />
+        <Route path="/login" element={<Login socket={socket} />} />
+
+        <Route path="/register" element={<Register socket={socket} />} />
+        
+        <Route path="/user" element={<User socket={socket} />} />
+        <Route path="/admin" element={<Admin socket={socket} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
